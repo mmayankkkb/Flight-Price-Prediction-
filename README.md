@@ -4,6 +4,7 @@ This model is trained on Random Forest Regressor with a dataset 'Data_Train' in 
 
 dataset is provided in repo.
 
+DataSet link-https://www.kaggle.com/datasets/nikhilmittal/flight-fare-prediction-mh?select=Data_Train.xlsx
 
 Library Used:
 
