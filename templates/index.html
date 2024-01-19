@@ -1,0 +1,107 @@
+<html>
+    <head>
+        <style>
+            body { 
+                width: 100%;
+                height:100%;
+                font-family: 'Open Sans', sans-serif;
+                background: #092756;
+                color: #fff;
+                font-size: 18px;
+                letter-spacing:1.2px;
+                background: -moz-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%),-moz-linear-gradient(top,  rgba(57,173,219,.25) 0%, rgba(42,60,87,.4) 100%), -moz-linear-gradient(-45deg,  #670d10 0%, #092756 100%);
+                background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), -webkit-linear-gradient(top,  rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), -webkit-linear-gradient(-45deg,  #670d10 0%,#092756 100%);
+                background: -o-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), -o-linear-gradient(top,  rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), -o-linear-gradient(-45deg,  #670d10 0%,#092756 100%);
+                background: -ms-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), -ms-linear-gradient(top,  rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), -ms-linear-gradient(-45deg,  #670d10 0%,#092756 100%);
+                background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), linear-gradient(to bottom,  rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), linear-gradient(135deg,  #670d10 0%,#092756 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3E1D6D', endColorstr='#092756',GradientType=1 );
+            }
+            select,input{
+                font-size: 18px;
+                letter-spacing:1.2px;
+            }
+            button{
+                font-size: 18px;
+                letter-spacing:1.2px;
+                padding: 1.1%;
+                padding-right: 2%;
+                padding-left: 2%;
+                border-radius: 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="text-align: center;">
+            Welcome
+        </h1>
+
+        <form method="post" style="margin-left: 40%; margin-top: 5%;">
+            <label>Total Stops</label>
+            <input type="text" name="TotalStops" placeholder="0">
+            <br><br>
+
+            <label>Departure Time :</label>
+            <input name="Departure" id="Departure" placeholder="23:00">
+            <br><br>
+
+            <label>Arrival Time :</label>
+            <input name="Arrival" id="Arrival" placeholder="23:00">
+            <br><br>
+            <label>Duration in hours :</label>
+            <input name="Durationinhours" id="Durationinhours" placeholder="2">
+            <br><br>
+
+
+            <label>Airline:</label>
+            <select name="Airline" id="Airline">
+                <option value="IndiGo">IndiGo</option>
+                <option value="AirIndia">Air India</option>
+                <option value="JetAirways">Jet Airways</option>
+                <option value="SpiceJet">SpiceJet</option>
+                <option value="Multiplecarriers">Multiple carriers</option>
+                <option value="GoAir">GoAir</option>
+                <option value="Vistara">Vistara</option>
+                <option value="AirAsia">Air Asia</option>
+                <option value="VistaraPremiumeconomy">Vistara Premium economy</option>
+                <option value="JetAirwaysBusiness">Jet Airways Business</option>
+                <option value="MultiplecarriersPremiumeconomy">Multiple carriers Premium economy</option>
+                <option value="Trujet">Trujet</option>
+            </select>
+            <br><br>
+            <label>Source: </label>
+            <select name="Source" id="Source">
+                <option value="Banglore">Banglore</option>
+                <option value="Kolkata">Kolkata</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Mumbai">Mumbai</option>
+            </select>
+            <br><br>
+            <label>Destination:</label>
+            <select name="Destination" id="Destination">
+                <option value="NewDelhi">New Delhi</option>
+                <option value="Banglore">Banglore</option>
+                <option value="Cochin">Cochin</option>
+                <option value="Kolkata">Kolkata</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Hyderabad">Hyderabad</option>
+            </select>
+            <br><br>
+            <label>Additional Info :</label>
+            <select name="AdditionalInfo">
+                <option value="Noinfo">No information</option>
+                <option value="In-flightmealnotincluded">In-flight meal not included</option>
+                <option value="Nocheck-inbaggageincluded">No check-in baggage included</option>
+                <option value="1Shortlayover">1 Short layover</option>
+                <option value="NoInfo">No Information</option>
+                <option value="1Longlayover">1 Long layover</option>
+                <option value="Changeairports">Change airports</option>
+                <option value="Businessclass">Business class</option>
+                <option value="Red-eyeflight">Red-eye flight</option>
+                <option value="2Longlayover">2 Long layover</option>
+            </select>
+            <br><br>
+            <button type="submit" style="margin-left: 15%;">Submit</button>
+        </form>
+    </body>
+</html>
