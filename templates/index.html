@@ -35,7 +35,7 @@
             Welcome
         </h1>
 
-        <form method="post" style="margin-left: 40%; margin-top: 5%;">
+        <form method="post" style="margin-left: 40%; margin-top: 5%;" action="{{ url_for('predict') }} ">
             <label>Total Stops</label>
             <input type="text" name="TotalStops" placeholder="0">
             <br><br>
@@ -47,7 +47,7 @@
             <label>Arrival Time :</label>
             <input name="Arrival" id="Arrival" placeholder="23:00">
             <br><br>
-            <label>Duration in hours :</label>
+            <label>Duration of flight in hrs :</label>
             <input name="Durationinhours" id="Durationinhours" placeholder="2">
             <br><br>
 
@@ -103,5 +103,8 @@
             <br><br>
             <button type="submit" style="margin-left: 15%;">Submit</button>
         </form>
+        <h2 style="text-align: center;">
+           {{Prediction_text}}  
+        </h2>
     </body>
 </html>

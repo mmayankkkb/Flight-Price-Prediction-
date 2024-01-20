@@ -1,6 +1,7 @@
 from flask import Flask,request,jsonify,url_for,render_template
 import pickle
 import numpy as np
+from data_preprocess import process 
 app=Flask(__name__)
 model=pickle.load(open('model.pkl','rb'))
 
@@ -10,7 +11,8 @@ def home():
 
 @app.route('/predict', methods=['POST'])
 def predict():
-    feature_inp=[int(i) for i in request.form.values()]
+    feature_inp=[i for i in request.form.values()]
+    #process(feature_inp)
     final_feature=[np.array(feature_inp)]
     prediction=model.predict(final_feature)
     output=round(prediction[0],2)
