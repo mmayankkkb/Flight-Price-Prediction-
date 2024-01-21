@@ -12,12 +12,12 @@ def home():
 @app.route('/predict', methods=['POST'])
 def predict():
     feature_inp=[i for i in request.form.values()]
-    #process(feature_inp)
-    final_feature=[np.array(feature_inp)]
+    
+    final_feature=[process(feature_inp)]
     prediction=model.predict(final_feature)
     output=round(prediction[0],2)
 
-    return render_template('index.html',Prediction_text='Flight Price Should be $ {}'.format(output))
+    return render_template('index.html',Prediction_text='Flight Price Should be Rs :{}'.format(output))
 
 
 if __name__ == "__main__":
