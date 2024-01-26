@@ -1,5 +1,8 @@
 <html>
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <style>
             body { 
                 width: 100%;
@@ -35,7 +38,7 @@
             Welcome
         </h1>
 
-        <form method="post" style="margin-left: 40%; margin-top: 5%;" action="{{ url_for('predict') }} ">
+        <form method="post" style="text-align: left;margin: 5%;padding-left: 30%;" action="{{ url_for('predict') }} ">
             <label>Total Stops</label>
             <input type="text" name="TotalStops" placeholder="0">
             <br><br>
